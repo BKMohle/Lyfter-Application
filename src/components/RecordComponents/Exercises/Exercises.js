@@ -1,5 +1,6 @@
 import React from 'react'
 import Select from 'react-select'
+import Form from 'react-bootstrap/Form'
 
 var exerciseList = {
         'Barbell Bench Press': {'Pectorals': 1, 'Triceps': 1, 'Front_Deltoids': 1},
@@ -62,7 +63,13 @@ const options = [
       
 const ExerciseList = () => (
 
-        <Select options={options} />
+        <Form>
+                <Form.Group controlId='formSelectExercise'>
+                        <Form.Label>List of Exercises </Form.Label>
+                        <Select options={options} />
+
+                </Form.Group>
+        </Form>
 
 )
 
