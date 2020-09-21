@@ -51,15 +51,8 @@ var exerciseList = {
         'High Row Machine': {'Trapezius':1, 'Lats':2, 'Rear_Deltoids':2},
         'French Press': {'Triceps':1}
    }
-   
 
 var exerciseDropDownList = Object.keys(exerciseList)
-
-const options = [
-        { value: 'chocolate', label: 'Chocolate' },
-        { value: 'strawberry', label: 'Strawberry' },
-        { value: 'vanilla', label: 'Vanilla' }
-      ]
 
 var exercise_options = []
 var i;
@@ -79,11 +72,5 @@ const ExerciseList = () => (
         </Form>
 
 )
-
-// const ExercistList = () => {
-
-        
-
-// }
 
 export default ExerciseList
