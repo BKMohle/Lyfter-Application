@@ -60,14 +60,21 @@ const options = [
         { value: 'strawberry', label: 'Strawberry' },
         { value: 'vanilla', label: 'Vanilla' }
       ]
+
+var exercise_options = []
+var i;
+for (i = 0; i <= exerciseDropDownList.length; i++) {
+        exercise_options.push({ value: exerciseDropDownList[i], label: exerciseDropDownList[i]})
+}
+
+console.log(exercise_options)
       
 const ExerciseList = () => (
 
         <Form>
                 <Form.Group controlId='formSelectExercise'>
                         <Form.Label>List of Exercises </Form.Label>
-                        <Select options={options} />
-
+                        <Select options={exercise_options} />
                 </Form.Group>
         </Form>
 
