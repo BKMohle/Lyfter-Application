@@ -59,8 +59,6 @@ var i;
 for (i = 0; i <= exerciseDropDownList.length; i++) {
         exercise_options.push({ value: exerciseDropDownList[i], label: exerciseDropDownList[i]})
 }
-
-console.log(exercise_options)
       
 const ExerciseList = () => (
 
