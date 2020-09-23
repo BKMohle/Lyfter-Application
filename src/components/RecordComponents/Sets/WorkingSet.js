@@ -1,25 +1,23 @@
-import React, { useState } from 'react'
-import Button from 'react-bootstrap/Button'
+import React from 'react'
 import Form from 'react-bootstrap/Form'
 
-const WorkingSets = () => {
-
-   const [weight,setWeight] = useState(null)
-   const [reps,setReps] = useState(null)
-
+const WorkingSet = () => {
+   
    return (
       <>
       <div>
          <Form>
             <Form.Group controlId='formSetWeight'>
-            <Form.Label>lbs </Form.Label>
+               <Form.Label>lbs </Form.Label>
+               <Form.Control type="weight" />
             </Form.Group>
          </Form>
       </div>
       <div>
-      <Form>
+         <Form>
             <Form.Group controlId='formSetWeight'>
-            <Form.Label>Reps </Form.Label>
+               <Form.Label>Reps </Form.Label>
+               <Form.Control type="reps"/>
             </Form.Group>
          </Form>
       </div>
@@ -28,4 +26,4 @@ const WorkingSets = () => {
 
 }
 
-export default WorkingSets
+export default WorkingSet
