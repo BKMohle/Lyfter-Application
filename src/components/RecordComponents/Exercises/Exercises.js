@@ -60,15 +60,17 @@ for (i = 0; i <= exerciseDropDownList.length; i++) {
         exercise_options.push({ value: exerciseDropDownList[i], label: exerciseDropDownList[i]})
 }
       
-const ExerciseList = () => (
+const ExerciseList = () => {
 
-        <Form>
-                <Form.Group controlId='formSelectExercise'>
-                        <Form.Label>List of Exercises </Form.Label>
-                        <Select options={exercise_options} />
-                </Form.Group>
-        </Form>
+        return (
+                <Form>
+                        <Form.Group controlId='formSelectExercise'>
+                                <Form.Label>List of Exercises </Form.Label>
+                                <Select options={exercise_options} />
+                        </Form.Group>
+                </Form>
+        )
 
-)
+}
 
 export default ExerciseList
