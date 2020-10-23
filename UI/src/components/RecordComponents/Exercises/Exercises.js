@@ -1,6 +1,7 @@
 import React from 'react'
 import Select from 'react-select'
 import Form from 'react-bootstrap/Form'
+import Sets from '../Sets/Sets'
 
 var exerciseList = {
         'Barbell Bench Press': {'Pectorals': 1, 'Triceps': 1, 'Front_Deltoids': 1},
@@ -63,12 +64,15 @@ for (i = 0; i <= exerciseDropDownList.length; i++) {
 const ExerciseList = () => {
 
         return (
-                <Form>
-                        <Form.Group controlId='formSelectExercise'>
-                                <Form.Label>List of Exercises </Form.Label>
-                                <Select options={exercise_options} />
-                        </Form.Group>
-                </Form>
+                <div>
+                        <Form>
+                                <Form.Group controlId='formSelectExercise'>
+                                        <Form.Label>List of Exercises </Form.Label>
+                                        <Select options={exercise_options}/>
+                                </Form.Group>
+                        </Form>
+                        <Sets/>
+                </div>
         )
 
 }

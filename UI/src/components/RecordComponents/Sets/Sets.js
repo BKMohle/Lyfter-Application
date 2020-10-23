@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import Button from 'react-bootstrap/Button'
 import WorkingSet from './WorkingSet'
 
-const Sets = () => {
+const Sets = (props) => {
 
-   const [numberOfSets,setNumberOfSets] = useState(1)
+   const [numberOfSets,setNumberOfSets] = useState(0)
 
    let sets = []
    
@@ -23,7 +23,7 @@ const Sets = () => {
          <div>
             {sets}
          </div>
-         <Button type="submit" onClick={AddSet}>+ Add Set</Button>
+         <Button  onClick={AddSet}>+ Add Set</Button>
       </>
    )
 }
